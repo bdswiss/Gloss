@@ -26,5 +26,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "Gloss"
+    name: "Gloss",
+    platforms: [
+        .iOS(.v8), .tvOS(.v9), .macOS(.v10_11)
+    ],
+    products: [
+        .library(name: "Gloss", targets: ["Gloss"]),
+    ],
+    dependencies: [],
+    targets: [
+        .target(name: "Gloss")
+    ],
+    swiftLanguageVersions: [.v5]
 )
