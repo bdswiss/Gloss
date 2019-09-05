@@ -36,7 +36,7 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(name: "Gloss")
+        .target(name: "Gloss", path: "Sources")
     ],
     swiftLanguageVersions: [.v5]
 )
